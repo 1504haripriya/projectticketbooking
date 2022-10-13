@@ -11,7 +11,7 @@ current_income = 0
 
 while user_input != 0:
     print(
-        "1: Show the Seats\n2: Choose the movie\n3: Choose movie language\n4: Show the time\n5: Buy a Ticket\n6: Statistics\n7: Show booked Tickets User Info\n0: Exit")
+        "1: Show the Seats\n2: Choose the movie\n3: Choose movie language\n4: Show the time\n5: Buy a Ticket\n6: Statistics\n7: Show booked Tickets User Info\n8: Terms and condition\n0: Exit")
     print(50 * "-")
     user_input = int(input())
 
@@ -59,6 +59,8 @@ while user_input != 0:
     elif user_input == 8:
      u1 = user_info.user_info()
 
+     file = open("ticket.txt","r")
+     print(file.read())
 
 
 
